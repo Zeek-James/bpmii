@@ -43,28 +43,28 @@ export const programs = [
 export const categories = [
   {
     id: 1,
-    criteria: "BPM Certified Process Analyst Scheme",
+    category: "BPM Certified Process Analyst Scheme",
     link: "/",
     description:
       "The Certified Process Analyst Scheme provides for business process management students like the diploma holders and graduates that intends running a career in the field of business process management. This programme is equivalent to the foundation level programme for intending professionals.",
   },
   {
     id: 2,
-    criteria: "Foundation Certificate",
+    category: "Foundation Certificate",
     link: "/",
     description:
       "This is the entry level for intending business process management practitioners like; first degree holders, and employees with non-business process management roles in their present employments. This level is also ideal for entrepreneurs, and those starting out in a business process management career.",
   },
   {
     id: 3,
-    criteria: "Intermediate Certificate Examination 1",
+    category: "Intermediate Certificate Examination 1",
     link: "/",
     description:
       "This is the next stage after the foundation level, it is also suitable for aspiring BPM Experts who intends to acquire more knowledge and skills towards a progressive career in the field of business process management. Such candidates shall be exempted from writing the foundation level examination. Candidates to be granted such exemptions must be working in business process management support roles (e.g. business process management assistants) or staff members whose present job specifications contains elements of business process management.",
   },
   {
     id: 4,
-    criteria: "Professional Certification Examination 2 PCE 1",
+    category: "Professional Certification Examination 2 PCE 1",
     link: "/",
     description:
       "This is the last stage of the qualifying examinations for intending or already practicing professionals. To attempt the professional certification examination 2, such candidates must have written all the preceding examinations or gotten exemption for them. The other sets of candidates that can attempt this level directly are already experienced BPM Experts working at a strategic business process management or management level or aspiring to do so. Candidates at this level are also prepared for consultancy services as well as industry resource persons. Interested successful candidates at this level are offered the BPM Certified Trainers Certificate. The is the last examination stage, other levels are purely based on practice experience and numbers of points gotten from the BPMI continuous career development programmes as well as participation in the other events of the BPM Institute.",

@@ -1,4 +1,3 @@
-import Star from "@/assets/Star";
 import Union from "@/assets/Union";
 
 import { categories } from "@/constants/membership";
