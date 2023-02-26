@@ -68,9 +68,11 @@ const Events = () => {
           </div>
         </div>
         <ul className="list-none flex flex-col   ">
-          {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14].map(() => (
-            <NewsList />
-          ))}{" "}
+          {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14].map((idx) => (
+            <div className="" key={idx}>
+              <NewsList />
+            </div>
+          ))}
         </ul>
       </div>
     </section>
