@@ -3,7 +3,6 @@ import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import React, { useState } from "react";
 import { navLinks } from "@/constants";
 import PLink from "./PLink";
-// import { LogoIcon } from "@/assets";
 import styles from "./style";
 
 const Navbar = () => {

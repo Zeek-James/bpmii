@@ -4,8 +4,8 @@ import React from "react";
 const Program = () => {
   return (
     <div>
-      {devProgrammes.map((p) => (
-        <div className="flex w-full   text-start mt-4">
+      {devProgrammes.map((p, idx) => (
+        <div key={idx} className="flex w-full   text-start mt-4">
           <div className=" h-[100px] w-[1px] bg-gray mr-3" />
 
           <div className="ml-3 ">
@@ -24,6 +24,7 @@ const Program = () => {
               <ul>
                 {p.list.map((item, idx) => (
                   <li
+                    key={idx}
                     className={`font-normal text-[21px] text-black ${
                       idx < p.list.length - 1 && "mb-4"
                     }`}

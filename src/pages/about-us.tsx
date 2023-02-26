@@ -51,8 +51,11 @@ border-b-2
               </ul>
               <div className={`${styles.paddingX}`}>
                 <div className={`flex grow justify-around md:mb-20 mb-10 `}>
-                  {cards.map((card) => (
-                    <div className="w-[300px] sm:w-[360px] shadow-lg p-3 bg-white border border-darkGray">
+                  {cards.map((card, idx) => (
+                    <div
+                      key={idx}
+                      className="w-[300px] sm:w-[360px] shadow-lg p-3 bg-white border border-darkGray"
+                    >
                       <h3 className="font-bold text-primary text-[25px] mb-3">
                         {card?.title}
                       </h3>
@@ -63,8 +66,11 @@ border-b-2
                       )}
                       {card.list && (
                         <ul>
-                          {card.list.map((item) => (
-                            <li className="text-[25px] text-gray font-normal">
+                          {card.list.map((item, idx) => (
+                            <li
+                              key={idx}
+                              className="text-[25px] text-gray font-normal"
+                            >
                               {item}
                             </li>
                           ))}
@@ -97,8 +103,8 @@ border-b-2
                   <h3 className="font-bold text-primary  text-[36px] mb-5">
                     Our Objectives
                   </h3>
-                  {ourObjs.map((obj) => (
-                    <div className="flex w-full mb-3 md:mb-6">
+                  {ourObjs.map((obj, idx) => (
+                    <div key={idx} className="flex w-full mb-3 md:mb-6">
                       <div className="pr-1">
                         <AiFillLike className="text-primary text-[36px]" />
                       </div>

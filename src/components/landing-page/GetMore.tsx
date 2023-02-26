@@ -39,7 +39,10 @@ const GetMore = () => {
               </h2>
               <div className="">
                 {[28, 22, 15, 5].map((a) => (
-                  <div className="flex max-w-[500px] border-b border-[#DBDBDB] py-2">
+                  <div
+                    key={a}
+                    className="flex max-w-[500px] border-b border-[#DBDBDB] py-2"
+                  >
                     <div className="font-semibold text-[#00305E] text-[21px] font-inter mr-6">
                       <p className="text-[12px]  border-b-2 border-[#9ACA3C] pb-1 ">
                         Dec
