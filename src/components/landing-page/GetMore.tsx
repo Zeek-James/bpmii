@@ -1,6 +1,6 @@
 import { getMore } from "@/constants/landingPage";
 import Image from "next/image";
-import GrayBg from "@/assets/grayBg";
+import { CurvedBg } from "@/assets";
 import React from "react";
 import Button from "../Button";
 
@@ -65,7 +65,7 @@ const GetMore = () => {
               </div>
             </div>
           </div>
-          <GrayBg className=" max-w-[700px]" />
+          <CurvedBg className=" max-w-[700px]" />
         </div>
       </div>
       {/* <div className=" relative">
@@ -99,7 +99,7 @@ const GetMore = () => {
             </div>
           </div>
         </div>
-        <GrayBg className="bg-[blue] max-w-[700px]" />
+        <CurvedBg className="bg-[blue] max-w-[700px]" />
       </div> */}
     </div>
   );

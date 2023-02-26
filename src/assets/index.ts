@@ -1,5 +1,5 @@
 import LogoIcon from "./Logo";
 import Union from "./Union";
 import Star from "./Star";
-
-// export { LogoIcon, Star, Union };
+import CurvedBg from "./CurvedBg";
+export { LogoIcon, Star, Union, CurvedBg };
