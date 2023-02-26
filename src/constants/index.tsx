@@ -26,30 +26,29 @@ export const navLinks = [
 ];
 
 export const footer = {
-  logo: "logo",
   links: [
     {
       id: "/",
-      title: "Home",
+      title: "Contact Us",
     },
     {
-      id: "about-us",
-      title: "About",
+      id: "/",
+      title: "Privacy Policy",
     },
     {
-      id: "categories",
-      title: "Award Categories",
+      id: "/",
+      title: "Accessibility Policy",
     },
     {
-      id: "judging",
-      title: "Judging",
+      id: "/",
+      title: "Advertise With Us",
     },
     {
-      id: "winners",
-      title: "Winners",
+      id: "login",
+      title: "Affiliate/Chapter Leader Login",
     },
   ],
-  copyRight: "Ⓒ BPMI, Inc. 2023. excellenceaward!",
+  copyRight: "Copyright © 2023 BPMI. All rights reserved.",
 };
 
 export const links = [

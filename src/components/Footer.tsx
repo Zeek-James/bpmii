@@ -1,19 +1,16 @@
 import { FaFacebookF, FaLinkedinIn, FaTwitter } from "react-icons/fa";
-import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { footer } from "../constants";
-import PLink from "./PLink";
+import styles from "./style";
 
 const Footer = () => {
   const { links, copyRight } = footer;
   return (
     <section
-      className={
-        "  pt-6 sm:pt-16 pb-6 flex flex-col sm:flex-row sm:justify-between sm:items-center"
-      }
+      className={`  flex flex-col sm:flex-row sm:justify-between sm:items-center  ${styles.padding}`}
     >
-      <div className="flex">
+      <div className="flex text-primary">
         <Link href={""} className="pr-4">
           <FaFacebookF />
         </Link>
@@ -27,17 +24,19 @@ const Footer = () => {
       <div className=" ">
         <div className="mb-4 sm:mb-0">
           <div className="  w-full   flex flex-wrap  ">
-            {links.map((f) => (
+            {links.map((f, idx) => (
               <p
                 key={f?.id}
-                className="px-2  mb-2 text-base hover:text-primary"
+                className={`${
+                  idx > 0 ? "px-2 md:px-6" : "pr-2 md:pr-6"
+                }   mb-2 text-base hover:text-gray text-primary`}
               >
                 <a href={`${f.id}`}>{f.title}</a>
               </p>
             ))}
           </div>
         </div>
-        <p className="text-sm whitespace-nowrap ">{copyRight}</p>
+        <p className="text-sm whitespace-nowrap text-gray">{copyRight}</p>
       </div>
     </section>
   );

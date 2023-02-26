@@ -8,7 +8,7 @@ interface InterestProps {
 const Interested = ({ pic }: InterestProps) => {
   return (
     <div
-      className={`bg-[url(/${pic}.jpg)] bg-no-repeat bg-cover flex justify-center items-center p-4 md:p-20`}
+      className={`bg-[url(/${pic}.jpg)] bg-no-repeat bg-cover flex justify-center items-center p-4 md:p-20 z-20 relative`}
     >
       <div className="bg-[#6C8AC0] text-white max-w-[600px] w-fit p-8">
         <h2 className="font-bold text-[36px]">

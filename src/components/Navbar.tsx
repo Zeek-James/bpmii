@@ -83,7 +83,7 @@ const Navbar = () => {
               <PLink
                 href="become-a-member"
                 text="Become A Member"
-                styles="border border-secondary text-secondary flex lg:hidden"
+                styles="border border-secondary  text-secondary flex lg:hidden"
               />
             </div>
           </div>

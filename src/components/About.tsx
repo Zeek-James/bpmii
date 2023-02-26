@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import PLink from "../PLink";
+import { PLink, Search, Topic } from ".";
 
 interface AboutProps {
   max?: string;
@@ -11,13 +11,13 @@ const About = ({ max }: AboutProps) => {
 
   const arr = max === "max" ? [1, 2, 3, 4, 5, 6, 7, 8] : [1, 2, 3, 4];
   return (
-    <div>
-      <h2>Learn about BPMI by exploring our Publications</h2>
-      <div className="grid xl:grid-cols-2 gap-4 sm:grid-cols-1">
-        <div className="">
-          <h4>SEARCH FOR A RESOURCE</h4>
-        </div>
-        <div className="">Topic</div>
+    <div className="mt-16">
+      <h2 className="text-[#00305E] font-bold text-[36px] text-center mb-10">
+        Learn about BPMI by exploring our Publications
+      </h2>
+      <div className="grid xl:grid-cols-2 gap-4 sm:grid-cols-1 mb-4 md:mb-10">
+        <Search />
+        <Topic />
       </div>
       <div className="grid xl:grid-cols-4 gap-4 lg:gap-8 sm:grid-cols-2">
         {arr.map((item, idx) => (
@@ -28,9 +28,9 @@ const About = ({ max }: AboutProps) => {
               src={`/chart.jpg`}
               alt="category"
               key={item}
-              className="cursor-pointer mb-2"
+              className="cursor-pointer mb-2 z-20 relative"
             />
-            <p className="">
+            <p className="z-20 relative">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
               vulputate libero
             </p>

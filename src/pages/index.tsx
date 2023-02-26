@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { Inter } from "@next/font/google";
-import { Layout } from "@/components";
+import { Herofn, Layout, styles } from "@/components";
 import { About, GetMore, Interested } from "@/components/landing-page";
 import { links } from "@/constants/landingPage";
 
@@ -17,30 +17,40 @@ export default function Home() {
       </Head>
       <main className={""}>
         <Layout>
-          Hero
-          <ul className="list-none flex justify-between  items-center flex-1">
-            {links.map((link, index) => (
-              <li
-                key={link.id}
-                className={`font-play  cursor-pointer font-bold text-[25px] p-2  text-link whitespace-nowrap 
+          <Herofn
+            img={"allinsuit"}
+            title={
+              "Promoting the practice of Business Process Management in Nigeria"
+            }
+          />
+
+          <div className={`${styles.paddingX}`}>
+            <ul className="list-none flex justify-between  items-center flex-1">
+              {links.map((link, index) => (
+                <li
+                  key={link.id}
+                  className={`font-play  cursor-pointer font-bold text-[25px] p-2  text-link whitespace-nowrap 
 
                 `}
-              >
-                <a
-                  href={`${link.id}`}
-                  className={
-                    link.title === "Sign in"
-                      ? "pl-6 border-l-[3px] border-primary"
-                      : ""
-                  }
                 >
-                  {link.title}
-                </a>
-              </li>
-            ))}
-          </ul>
-          <About />
-          <GetMore />
+                  <a
+                    href={`${link.id}`}
+                    className={
+                      link.title === "Sign in"
+                        ? "pl-6 border-l-[3px] border-primary"
+                        : ""
+                    }
+                  >
+                    {link.title}
+                  </a>
+                </li>
+              ))}
+            </ul>
+            <div className=" flex justify-center z-20">
+              <About />
+            </div>
+            <GetMore />
+          </div>
           <Interested pic={"mem"} />
         </Layout>
       </main>
