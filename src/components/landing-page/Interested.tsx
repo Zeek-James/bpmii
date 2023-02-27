@@ -7,26 +7,26 @@ interface InterestProps {
 
 const Interested = ({ pic }: InterestProps) => {
   return (
-    <div
-      className={`bg-[url(/${pic}.jpg)] bg-no-repeat bg-cover flex justify-center items-center p-4 md:p-20 z-20 relative`}
-    >
-      <div className="bg-[#6C8AC0] text-white max-w-[600px] w-fit p-8">
-        <h2 className="font-bold text-[36px]">
-          Interested in <br /> becoming a member?
-        </h2>
-        <p className="my-4 font-normal text-[17px]">
-          As a member of the Business Process Management Institute, you are
-          positioned to develop and improve on your business process management
-          knowledge, skills, and network by joining the Business Process
-          Management Institute.
-        </p>
-        <PLink
-          text="BECOME A MEMBER"
-          href="membership"
-          styles="bg-primary rounded-full p-4"
-        />
-      </div>
+    // <div
+    //   className={`bg-[url(/${pic}.jpg)] bg-no-repeat bg-cover flex justify-center items-center p-4 md:p-20 z-20 relative`}
+    // >
+    <div className="bg-[#6C8AC0] text-white max-w-[600px] w-fit p-8">
+      <h2 className="font-bold text-[36px]">
+        Interested in <br /> becoming a member?
+      </h2>
+      <p className="my-4 font-normal text-[17px]">
+        As a member of the Business Process Management Institute, you are
+        positioned to develop and improve on your business process management
+        knowledge, skills, and network by joining the Business Process
+        Management Institute.
+      </p>
+      <PLink
+        text="BECOME A MEMBER"
+        href="membership"
+        styles="bg-primary rounded-full p-4"
+      />
     </div>
+    // </div>
   );
 };
 

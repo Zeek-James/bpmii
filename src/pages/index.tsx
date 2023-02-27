@@ -51,7 +51,11 @@ export default function Home() {
             </div>
             <GetMore />
           </div>
-          <Interested pic={"mem"} />
+          <div
+            className={`bg-[url(/mem.jpg)] bg-no-repeat bg-cover flex justify-center items-center p-4 md:p-20 z-20 relative`}
+          >
+            <Interested pic={"mem"} />
+          </div>
         </Layout>
       </main>
     </>
