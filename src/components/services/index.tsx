@@ -54,7 +54,10 @@ const Events = () => {
 
             <div className="grid-cols-4 grid gap-4 my-8">
               {[1, 2, 3, 4, 5, 6, 7, 8].map((t) => (
-                <div className="w-full pl-1  bg-gradient-to-b from-[#95C11F] to-[#88CDD3]">
+                <div
+                  key={t}
+                  className="w-full pl-1  bg-gradient-to-b from-[#95C11F] to-[#88CDD3]"
+                >
                   <div className="w-full bg-white">
                     <h4 className="text-[#16A2B7] font-bold text-[16px] mb-6">
                       Pre-retirement training
