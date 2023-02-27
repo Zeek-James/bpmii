@@ -8,9 +8,9 @@ const Events = () => {
       <div className="flex justify-center mb-4 md:mb-12">
         <h5 className="text-gray mr-3 text-[17px]">HOME</h5>/
         <h5 className="text-paleBlue mx-3 text-[17px] ">Service</h5>/
-        <h5 className="text-paleBlue mx-3 text-[17px] border-b">Service</h5>
+        <h5 className="text-paleBlue mx-3 text-[17px] border-b">Training</h5>
       </div>
-      <div className="flex flex-col md:flex-row sm:px-10 px-4  sm:pb-20 pb-4">
+      <div className="flex flex-col lg:flex-row sm:px-10 px-4  sm:pb-20 pb-4">
         <div className="flex flex-col justify-between my-6 md:my-20">
           <ul className="list-none flex flex-col   ">
             <Links />
@@ -39,7 +39,7 @@ const Events = () => {
           </div>
           <div className="my-3 md:my-10 flex">
             <div className="max-w-[900px]">
-              <p className="font-normal text-[20px] text-black">
+              <p className="font-normal text-[20px] text-black mb-4 leading-8">
                 The Manufacturers Association of Nigeria (MAN) wishes to inform
                 the general public that it is no longer a partner in the
                 organization of the Annual Nigeria Manufacturing
@@ -47,7 +47,7 @@ const Events = () => {
                 (NME/mPAD) events organized by Clarion Events West Africa, a
                 South African Company.
               </p>
-              <p className="font-normal text-[20px] text-black">
+              <p className="font-normal text-[20px] text-black mb-4 leading-8">
                 This decision is sequel to the closure of our partner’s (Clarion
                 Events West Africa) business interest in Nigeria which led to
                 laying off its staff operating in Lagos. Consequently, MAN
@@ -58,7 +58,7 @@ const Events = () => {
                 in partnership with MAN. MAN members are particularly put on
                 notice to be aware.
               </p>
-              <p className="font-normal text-[20px] text-black">
+              <p className="font-normal text-[20px] text-black mb-4 leading-8">
                 We wish to express our deep appreciation to the exhibitors (both
                 Local and International), the general public and our media
                 partners who have supported the Association in the organization

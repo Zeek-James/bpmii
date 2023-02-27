@@ -5,10 +5,10 @@ const styles = {
     "open-sans font-bold xs:text-[48px] text-[35px] text-white xs:leading-[76.8px] leading-[66.8px] w-full",
 
   heading3:
-    "open-sans font-bold xs:text-[32px] text-[28px] text-white xs:leading-[76.8px] leading-[40.8px] mb-2 w-full",
+    "open-sans font-bold xs:text-[32px] text-[28px]  xs:leading-[76.8px] leading-[40.8px]  w-full",
 
   paragraph:
-    "font-poppins font-normal text-dimWhite text-[18px] leading-[30.8px]",
+    "font-poppins font-normal text-dimWhite md:text-[20px] text-[18px] leading-[30.8px]",
 
   flexCenter: "flex justify-center items-center",
   flexStart: "flex justify-center items-start",

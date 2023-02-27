@@ -3,11 +3,14 @@ import React from "react";
 
 const Links = () => {
   return (
-    <div>
+    <div
+      className="flex flex-wrap
+    "
+    >
       {links.map((link) => (
         <li
           key={link.id}
-          className={`font-play w-fit  cursor-pointer font-bold text-[17px] p-2  text-link border-darkGray whitespace-nowrap 
+          className={`font-play w-fit  cursor-pointer font-bold text-[17px] p-2 hover:text-dim text-link border-darkGray whitespace-nowrap 
 border-b-2
                 `}
         >

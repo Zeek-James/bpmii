@@ -10,7 +10,7 @@ const Footer = () => {
     <section
       className={`  flex flex-col sm:flex-row sm:justify-between sm:items-center  ${styles.padding}`}
     >
-      <div className="flex text-primary">
+      <div className="flex text-primary mb-6">
         <Link href={""} className="pr-4">
           <FaFacebookF />
         </Link>
@@ -26,10 +26,10 @@ const Footer = () => {
           <div className="  w-full   flex flex-wrap  ">
             {links.map((f, idx) => (
               <p
-                key={f?.id}
+                key={idx}
                 className={`${
                   idx > 0 ? "px-2 md:px-6" : "pr-2 md:pr-6"
-                }   mb-2 text-base hover:text-gray text-primary`}
+                }   mb-6 text-base hover:text-gray text-primary`}
               >
                 <a href={`${f.id}`}>{f.title}</a>
               </p>

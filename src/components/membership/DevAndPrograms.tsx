@@ -12,7 +12,7 @@ const DevAndPrograms = () => {
         <h5 className="text-gray mr-3 text-[17px]">HOME</h5>/{" "}
         <h5 className="text-paleBlue ml-3 text-[17px] border-b">Membership</h5>
       </div>
-      <div className="flex flex-col md:flex-row sm:px-10 px-4  sm:pb-20 pb-4">
+      <div className="flex flex-col lg:flex-row sm:px-10 px-4  sm:pb-20 pb-4">
         <div className="flex flex-col justify-between">
           <ul className="list-none flex flex-col   ">
             <Links />
@@ -22,16 +22,16 @@ const DevAndPrograms = () => {
             alt=""
             width={240}
             height={667}
-            className="top-3 right-3 relative"
+            className="top-3 right-3 relative hidden lg:block"
           />
         </div>
         <div className={`${styles.paddingX}`}>
-          <div className="my-3 md:my-10 flex">
-            <div className="max-w-[700px]">
-              <h3 className="font-bold text-primary text-[36px] mb-5">
+          <div className={`my-3 md:my-10 flex flex-col xl:flex-row `}>
+            <div className="">
+              <h3 className={`  text-primary ${styles.heading3} mb-5`}>
                 MEMBERSHIP BENEFITS
               </h3>
-              <p className="font-normal text-[20px] text-black">
+              <p className={`font-normal  text-black ${styles.paragraph} `}>
                 As a member of the Business Process Management Institute, you
                 are positioned to develop and improve on your business process
                 management knowledge, skills, and network by joining the
@@ -46,7 +46,7 @@ const DevAndPrograms = () => {
                 Management Expert.
               </p>
             </div>
-            <div className="relative flex">
+            <div className="relative flex mt-20 xl:mt-0  xl:min-w-[400px]">
               <Image
                 src={"/union.jpg"}
                 alt=""
@@ -59,17 +59,17 @@ const DevAndPrograms = () => {
                 alt=""
                 width={250}
                 height={370}
-                className="top-3 right-3 relative"
+                className="top-3 right-3 hidden sm:block relative"
               />
             </div>
           </div>
           <div className="text-center mt-20 max-w-6xl">
-            <h3 className="font-bold text-primary  text-[36px] mb-5">
+            <h3 className={`  text-primary ${styles.heading3} mb-5`}>
               PROPOSED MEMBERSHIP DEVELOPMENT <br /> PROGRAMMES RESOURCE
               COLLATERAL
             </h3>
             <div className="flex w-full mb-3 md:mb-6">
-              <p className="font-normal text-[25px] text-black ">
+              <p className={`font-normal  text-black ${styles.paragraph}`}>
                 The BPMI resource collateral is a knowledge base containing
                 insightful write ups, articles, insights and research materials
                 in the field of business process management for the use of the
@@ -97,7 +97,7 @@ const DevAndPrograms = () => {
           </h4>
           <p className="text-gray text-[21px]">{programs[0].content}</p>
         </div>
-        <div className="">
+        <div className="mt-12 md:mt-0">
           <Image
             src={"/people.jpg"}
             alt=""

@@ -24,21 +24,23 @@ export default function Home() {
               </h5>
             </div>
             <div className="flex flex-col md:flex-row sm:px-10 px-4  sm:pb-20 pb-4">
-              <ul className="list-none flex flex-col">
+              <ul className="list-none flex md:flex-col mb-10">
                 <Links />
               </ul>
               <div className={`${styles.paddingX}`}>
-                <div className={`flex grow justify-around md:mb-20 mb-10 `}>
+                <div
+                  className={`flex grow justify-around flex-wrap md:mb-20 mb-10 `}
+                >
                   {cards.map((card, idx) => (
                     <div
                       key={idx}
-                      className="w-[300px] sm:w-[360px] shadow-lg p-3 bg-white border border-darkGray"
+                      className="w-[300px] sm:w-[360px] shadow-lg p-3 bg-white border border-darkGray mb-14"
                     >
                       <h3 className="font-bold text-primary text-[25px] mb-3">
                         {card?.title}
                       </h3>
                       {card.content && (
-                        <p className="text-[25px] text-gray font-normal">
+                        <p className=" text-[18px]  lg:text-[25px] text-gray font-normal">
                           {card.content}
                         </p>
                       )}
@@ -47,7 +49,7 @@ export default function Home() {
                           {card.list.map((item, idx) => (
                             <li
                               key={idx}
-                              className="text-[25px] text-gray font-normal"
+                              className=" text-[18px]  lg:text-[25px] text-gray font-normal"
                             >
                               {item}
                             </li>
@@ -58,10 +60,10 @@ export default function Home() {
                   ))}
                 </div>
                 <div className="my-3 md:my-10">
-                  <h3 className="font-bold text-primary text-[36px] mb-5">
+                  <h3 className="font-bold text-primary  text-[25px]  lg:text-[36px] mb-5">
                     ABOUT BUSINESS PROCESS MANAGEMENT INSTITUTE
                   </h3>
-                  <p className="font-normal text-[25px] text-black">
+                  <p className="font-normal  text-[18px]  lg:text-[25px] text-black">
                     The Business Process Management Institute is established to
                     develop and promote the practice of business process
                     management in Nigeria. This is based on the desire to ensure
@@ -78,15 +80,15 @@ export default function Home() {
                   </p>
                 </div>
                 <div className="">
-                  <h3 className="font-bold text-primary  text-[36px] mb-5">
+                  <h3 className="font-bold text-primary   text-[25px]  lg:text-[36px] mb-5">
                     Our Objectives
                   </h3>
                   {ourObjs.map((obj, idx) => (
                     <div key={idx} className="flex w-full mb-3 md:mb-6">
                       <div className="pr-1">
-                        <AiFillLike className="text-primary text-[36px]" />
+                        <AiFillLike className="text-primary  text-[25px]  lg:text-[36px]" />
                       </div>
-                      <p className="font-normal text-[25px] text-black">
+                      <p className="font-normal  text-[18px]  lg:text-[25px] text-black">
                         {obj}
                       </p>
                     </div>

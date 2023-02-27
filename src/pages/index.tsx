@@ -22,11 +22,11 @@ export default function Home() {
           />
 
           <div className={`${styles.paddingX}`}>
-            <ul className="list-none flex justify-between  items-center flex-1">
+            <ul className="list-none flex flex-col md:flex-row justify-between  md:items-center flex-1">
               {links.map((link) => (
                 <li
                   key={link.id}
-                  className={`font-play  cursor-pointer font-bold text-[25px] p-2  text-link whitespace-nowrap 
+                  className={`font-play  cursor-pointer font-bold text-[17px] md:text-[25px] p-2  text-link whitespace-nowrap 
 
                 `}
                 >

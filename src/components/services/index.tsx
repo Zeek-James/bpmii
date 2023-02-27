@@ -9,7 +9,7 @@ const Events = () => {
         <h5 className="text-gray mr-3 text-[17px]">HOME</h5>/{" "}
         <h5 className="text-paleBlue ml-3 text-[17px] border-b">Service</h5>
       </div>
-      <div className="flex flex-col md:flex-row sm:px-10 px-4  sm:pb-20 pb-4">
+      <div className="flex flex-col lg:flex-row sm:px-10 px-4  sm:pb-20 pb-4">
         <div className="flex flex-col justify-between my-6 md:my-20">
           <ul className="list-none flex flex-col   ">
             <Links />
@@ -26,10 +26,10 @@ const Events = () => {
                 className="mb-6"
               />
 
-              <h3 className="font-bold text-primary text-[36px] mb-5">
+              <h3 className={`  text-primary ${styles.heading3} mb-5`}>
                 E-LEARNING PROGRAMMES
               </h3>
-              <p className="font-normal text-[20px] text-black">
+              <p className={`font-normal  text-black ${styles.paragraph}`}>
                 We shall be offering all our training programmes via the
                 e-learning platform for intending members that might not be able
                 to make it to any of the designated learning centres nation-
@@ -42,21 +42,21 @@ const Events = () => {
             </div>
           </div>
           <div className="">
-            <div className="flex justify-between">
-              <h4 className="font-normal text-[34px] text-[#4A4A4A]">
+            <div className="flex flex-col md:flex-row justify-between mt-10">
+              <h4 className="font-normal text-[25px] md:text-[34px] text-[#4A4A4A] mb-6">
                 Upcoming Events & Trainings
               </h4>
               <Button
-                styles="text-[#1D71B8] border-[#1D71B8] border px-10 md:px-16"
+                styles="text-[#1D71B8] border-[#1D71B8] border h-fit px-10 xl:px-16"
                 text="View all"
               />
             </div>
 
-            <div className="grid-cols-4 grid gap-4 my-8">
+            <div className="xl:grid-cols-4 md:grid-cols-2 grid gap-4 my-8">
               {[1, 2, 3, 4, 5, 6, 7, 8].map((t) => (
                 <div
                   key={t}
-                  className="w-full pl-1  bg-gradient-to-b from-[#95C11F] to-[#88CDD3]"
+                  className="w-full pl-1  bg-gradient-to-b from-[#95C11F] to-[#88CDD3] mb-6"
                 >
                   <div className="w-full bg-white">
                     <h4 className="text-[#16A2B7] font-bold text-[16px] mb-6">

@@ -2,9 +2,9 @@ import React from "react";
 
 const Topic = () => {
   return (
-    <div>
+    <div className="mb-3">
       <h4 className="font-bold font-inter text-[14px] text-[#65656A]">Topic</h4>
-      <div className="flex">
+      <div className="flex flex-wrap">
         {[1, 2, 3, 4, 5, 6].map((t) => (
           <div
             key={t}

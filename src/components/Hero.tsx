@@ -14,11 +14,13 @@ const Hero = ({ img, title }: HeroProp) => {
         className="w-[100%]  
      h-[100%] 
       absolute
+      object-cover
       "
         alt=""
         height={500}
-        width={2000}
+        width={1000}
       />
+      <div className="bg-black absolute w-full h-full z-10 opacity-[0.6]" />
 
       <div
         className="
@@ -42,12 +44,13 @@ export const Herofn = ({ img }: HeroProp) => {
         className="w-[100%]  
      h-[100%] 
       absolute
+      object-cover
       "
         alt=""
         height={500}
-        width={2000}
+        width={1000}
       />
-
+      <div className="bg-black absolute w-full h-full z-10 opacity-[0.6]" />
       <div
         className="
         pt-20

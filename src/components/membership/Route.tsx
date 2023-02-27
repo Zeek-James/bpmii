@@ -12,15 +12,15 @@ const Route = () => {
         <h5 className="text-gray mr-3 text-[17px]">HOME</h5>/{" "}
         <h5 className="text-paleBlue ml-3 text-[17px] border-b">Membership</h5>
       </div>
-      <div className="flex flex-col md:flex-row sm:px-10 px-4  sm:pb-20 pb-4">
-        <div className="flex flex-col justify-between my-6 md:my-20">
+      <div className="flex flex-col xl:flex-row sm:px-10 px-4  sm:pb-20 pb-4">
+        <div className="flex flex-col justify-between my-6 xl:my-20">
           <ul className="list-none flex flex-col   ">
             <Links />
           </ul>
         </div>
         <div className={`${styles.paddingX}`}>
-          <div className="my-3 md:my-10 flex">
-            <div className="max-w-[700px]">
+          <div className="my-3 md:my-10 flex flex-col xl:flex-row">
+            <div className="">
               <Image
                 src={"/people.jpg"}
                 alt=""
@@ -29,10 +29,10 @@ const Route = () => {
                 className="mb-6"
               />
 
-              <h3 className="font-bold text-primary text-[36px] mb-5">
+              <h3 className={`  text-primary ${styles.heading3} mb-5`}>
                 GRADING EXAMINATION ROUTE ( Membership){" "}
               </h3>
-              <p className="font-normal text-[20px] text-black">
+              <p className={`font-normal  text-black ${styles.paragraph} `}>
                 The Graded membership programme is designed for first degree
                 graduates of relevant disciplines and existing practitioners in
                 the field of business process management. The first degree
@@ -46,7 +46,7 @@ const Route = () => {
                 become members of the institute.
               </p>
             </div>
-            <div className="relative flex">
+            <div className="relative flex sm:min-w-[350px]  justify-center mt-10">
               <Image
                 src={"/class.jpg"}
                 alt=""
@@ -63,12 +63,12 @@ const Route = () => {
               />
             </div>
           </div>
-          <div className="">
+          <div className="overflow-x  w-[330px] sm:w-full px-6 overflow-x-scroll">
             <table
-              className={`${styles.paddingY}  table-auto  border-separate  w-full my-4`}
+              className={`${styles.paddingY} overflow-x-scroll  table-auto  border-separate  w-full my-4`}
             >
               <thead>
-                <tr className={` text-paleBlue font-bold text-[30px]`}>
+                <tr className={` text-paleBlue ${styles.heading3}`}>
                   <th className={`${col}   justify-center text-center`}>S/N</th>
                   <th className={`${col}   justify-center text-center`}>
                     CATEGORY

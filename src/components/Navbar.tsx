@@ -22,7 +22,7 @@ const Navbar = () => {
       <nav className="w-full flex  z-40 top-0 left-0  py-2 justify-between items-center navbar">
         <Link href={"/"} className="grow mr-4">
           {/* <LogoIcon /> */}
-          <Image src={"/logo.jpg"} alt="" height={65} width={60} />
+          <Image src={"/logo.jpg"} alt="" height={60} width={60} />
         </Link>
         <ul className="list-none lg:flex hidden  items-center flex-1">
           {navLinks.map((nav, index) => (
