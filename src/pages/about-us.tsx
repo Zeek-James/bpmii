@@ -1,12 +1,8 @@
 import Head from "next/head";
-import { Inter } from "@next/font/google";
-import { Hero, Layout, styles } from "@/components";
+import { Hero, Layout, Links, styles } from "@/components";
 import { Interested } from "@/components/landing-page";
-import { links } from "@/constants/landingPage";
 import { cards, ourObjs } from "@/constants/about";
 import { AiFillLike } from "react-icons/ai";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
@@ -28,26 +24,8 @@ export default function Home() {
               </h5>
             </div>
             <div className="flex flex-col md:flex-row sm:px-10 px-4  sm:pb-20 pb-4">
-              <ul className="list-none flex flex-col   ">
-                {links.map((link, index) => (
-                  <li
-                    key={link.id}
-                    className={`font-play  cursor-pointer font-bold text-[25px] p-2  text-link border-darkGray whitespace-nowrap 
-border-b-2
-                `}
-                  >
-                    <a
-                      href={`${link.id}`}
-                      className={
-                        link.title === "Sign in"
-                          ? "pl-6 border-l-[3px]  border-primary"
-                          : ""
-                      }
-                    >
-                      {link.title}
-                    </a>
-                  </li>
-                ))}
+              <ul className="list-none flex flex-col">
+                <Links />
               </ul>
               <div className={`${styles.paddingX}`}>
                 <div className={`flex grow justify-around md:mb-20 mb-10 `}>
@@ -117,8 +95,11 @@ border-b-2
               </div>
             </div>
           </section>
-
-          <Interested pic={"aboutMem"} />
+          <div
+            className={`bg-[url(/aboutMem.jpg)] bg-no-repeat bg-cover flex justify-center items-center p-4 md:p-20 z-20 relative`}
+          >
+            <Interested />
+          </div>
         </Layout>
       </main>
     </>

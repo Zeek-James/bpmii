@@ -1,15 +1,8 @@
 import React from "react";
 import PLink from "../PLink";
 
-interface InterestProps {
-  pic: string;
-}
-
-const Interested = ({ pic }: InterestProps) => {
+const Interested = () => {
   return (
-    // <div
-    //   className={`bg-[url(/${pic}.jpg)] bg-no-repeat bg-cover flex justify-center items-center p-4 md:p-20 z-20 relative`}
-    // >
     <div className="bg-[#6C8AC0] text-white max-w-[600px] w-fit p-8">
       <h2 className="font-bold text-[36px]">
         Interested in <br /> becoming a member?
@@ -26,11 +19,10 @@ const Interested = ({ pic }: InterestProps) => {
         styles="bg-primary rounded-full p-4"
       />
     </div>
-    // </div>
   );
 };
 
-export const Interestedfn = ({ pic }: InterestProps) => {
+export const Interestedfn = () => {
   return (
     <div
       className={`bg-[url(/plentysmile.jpg)] bg-no-repeat bg-cover flex justify-center items-center p-4 md:p-10`}

@@ -7,7 +7,7 @@ const Links = () => {
       {links.map((link) => (
         <li
           key={link.id}
-          className={`font-play  cursor-pointer font-bold text-[25px] p-2  text-link border-darkGray whitespace-nowrap 
+          className={`font-play w-fit  cursor-pointer font-bold text-[17px] p-2  text-link border-darkGray whitespace-nowrap 
 border-b-2
                 `}
         >

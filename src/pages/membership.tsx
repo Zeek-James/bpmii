@@ -1,15 +1,7 @@
 import Head from "next/head";
-import { Inter } from "@next/font/google";
-import { Hero, Layout, styles } from "@/components";
+import { Hero, Layout } from "@/components";
 import { Interested } from "@/components/landing-page";
-import { links } from "@/constants/landingPage";
-import { cards, ourObjs } from "@/constants/about";
-import { AiFillLike } from "react-icons/ai";
-import Image from "next/image";
-import { devProgrammes } from "@/constants/membership";
 import DevAndPrograms from "@/components/membership/DevAndPrograms";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
@@ -24,7 +16,11 @@ export default function Home() {
         <Layout>
           <Hero img={"memHero"} title={"Membership"} />
           <DevAndPrograms />
-          <Interested pic={"twoWomen"} />
+          <div
+            className={`bg-[url(/twoWomen.jpg)] bg-no-repeat bg-cover flex justify-center items-center p-4 md:p-20 z-20 relative`}
+          >
+            <Interested />
+          </div>
         </Layout>
       </main>
     </>

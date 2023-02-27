@@ -1,10 +1,7 @@
 import Head from "next/head";
-import { Inter } from "@next/font/google";
 import { Herofn, Layout, styles } from "@/components";
 import { About, GetMore, Interested } from "@/components/landing-page";
 import { links } from "@/constants/landingPage";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
@@ -26,7 +23,7 @@ export default function Home() {
 
           <div className={`${styles.paddingX}`}>
             <ul className="list-none flex justify-between  items-center flex-1">
-              {links.map((link, index) => (
+              {links.map((link) => (
                 <li
                   key={link.id}
                   className={`font-play  cursor-pointer font-bold text-[25px] p-2  text-link whitespace-nowrap 
@@ -54,7 +51,7 @@ export default function Home() {
           <div
             className={`bg-[url(/mem.jpg)] bg-no-repeat bg-cover flex justify-center items-center p-4 md:p-20 z-20 relative`}
           >
-            <Interested pic={"mem"} />
+            <Interested />
           </div>
         </Layout>
       </main>

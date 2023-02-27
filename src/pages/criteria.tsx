@@ -16,7 +16,7 @@ export default function Home() {
         <Layout>
           <Hero img={"criteriaHero"} title={"Membership"} />
           <MemProgram />
-          <Interestedfn pic={"twoWomen"} />
+          <Interestedfn />
         </Layout>
       </main>
     </>

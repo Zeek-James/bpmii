@@ -1,6 +1,3 @@
-import Star from "@/assets/Star";
-import Union from "@/assets/Union";
-
 import { programs } from "@/constants/membership";
 import Image from "next/image";
 import React from "react";
@@ -88,14 +85,26 @@ const DevAndPrograms = () => {
         className={`flex flex-col md:flex-row ${styles.paddingX} ${styles.paddingY}`}
       >
         <div className=" md:pr-12">
-          <Star />
+          <Image
+            src={"/star.jpg"}
+            alt=""
+            height={120}
+            width={120}
+            className="mb-6"
+          />
           <h4 className={"text-primary font-bold text-[21px] my-5"}>
             {programs[0].title}
           </h4>
           <p className="text-gray text-[21px]">{programs[0].content}</p>
         </div>
         <div className="">
-          <Union />
+          <Image
+            src={"/people.jpg"}
+            alt=""
+            height={120}
+            width={120}
+            className="mb-6"
+          />
           <h4 className={"text-primary font-bold text-[21px] my-5"}>
             {programs[1].title}
           </h4>

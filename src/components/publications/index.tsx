@@ -1,7 +1,5 @@
-import Star from "@/assets/Star";
-
 import React from "react";
-import { Button, Links, styles } from "../";
+import { Links, styles } from "../";
 import { About } from "../landing-page";
 
 const Events = () => {

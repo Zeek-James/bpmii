@@ -4,6 +4,9 @@ import React, { useState } from "react";
 import { navLinks } from "@/constants";
 import PLink from "./PLink";
 import styles from "./style";
+import LogoIcon from "./Logo";
+import Link from "next/link";
+import Image from "next/image";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
@@ -17,7 +20,10 @@ const Navbar = () => {
       className={`min-h-fit flex z-30 fixed flex-col  w-full bg-white shadow-lg sm:py-6 py-3  ${styles.paddingX} top-0`}
     >
       <nav className="w-full flex  z-40 top-0 left-0  py-2 justify-between items-center navbar">
-        <div className="grow mr-4">{/* <LogoIcon /> */}</div>
+        <Link href={"/"} className="grow mr-4">
+          {/* <LogoIcon /> */}
+          <Image src={"/logo.jpg"} alt="" height={65} width={60} />
+        </Link>
         <ul className="list-none lg:flex hidden  items-center flex-1">
           {navLinks.map((nav, index) => (
             <li

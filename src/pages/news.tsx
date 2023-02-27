@@ -16,7 +16,7 @@ export default function News() {
         <Layout>
           <Hero img={"shelf"} title={"Publications"} />
           <Info />
-          <Interestedfn pic={"twoWomen"} />
+          <Interestedfn />
         </Layout>
       </main>
     </>

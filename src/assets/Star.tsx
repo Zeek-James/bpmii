@@ -1,12 +1,14 @@
 import * as React from "react";
+import { SVGProps } from "react";
 
-const Star = () => (
+const Star = (props: SVGProps<SVGSVGElement>) => (
   <svg
     width={132}
     height={108}
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"
+    {...props}
   >
     <path fill="url(#a)" d="M0 0h132v108H0z" />
     <defs>

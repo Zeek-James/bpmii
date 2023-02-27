@@ -1,5 +1,3 @@
-import Star from "@/assets/Star";
-
 import { criterias } from "@/constants/membership";
 import Image from "next/image";
 import React from "react";
@@ -15,15 +13,21 @@ const Route = () => {
         <h5 className="text-paleBlue ml-3 text-[17px] border-b">Membership</h5>
       </div>
       <div className="flex flex-col md:flex-row sm:px-10 px-4  sm:pb-20 pb-4">
-        <div className="flex flex-col justify-between">
-          <ul className="list-none flex flex-col   ">
+        <div className="flex flex-col justify-between my-6 md:my-20">
+          <ul className="list-none flex flex-col">
             <Links />
           </ul>
         </div>
         <div className={`${styles.paddingX}`}>
           <div className="my-3 md:my-10 flex">
             <div className="max-w-[700px]">
-              <Star />
+              <Image
+                src={"/star.jpg"}
+                alt=""
+                height={120}
+                width={120}
+                className="mb-6"
+              />
 
               <h3 className="font-bold text-primary text-[36px] mb-5">
                 GRADED MEMBERSHIP PROGRAMME (EXECUTIVE FAST TRACK){" "}

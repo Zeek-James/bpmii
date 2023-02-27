@@ -8,10 +8,6 @@ export const navLinks = [
     title: "Services",
   },
   {
-    id: "events",
-    title: "Events",
-  },
-  {
     id: "membership",
     title: "Membership",
   },
@@ -62,15 +58,11 @@ export const links = [
     title: "Publications",
   },
   {
-    id: "events-and-learnings",
-    title: "Events & Learnings",
+    id: "services",
+    title: "Services",
   },
   {
     id: "about-us",
     title: "About us",
-  },
-  {
-    id: "events",
-    title: "Events",
   },
 ];

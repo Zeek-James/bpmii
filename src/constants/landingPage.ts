@@ -4,21 +4,16 @@ export const links = [
     title: "Membership",
   },
   {
-    id: "news",
-    title: "News",
-  },
-  {
-    id: "gallery",
-    title: "Gallery",
-  },
-
-  {
     id: "publications",
     title: "Publications",
   },
   {
-    id: "events",
-    title: "Events & Learnings",
+    id: "services",
+    title: "Services",
+  },
+  {
+    id: "about-us",
+    title: "About us",
   },
 ];
 

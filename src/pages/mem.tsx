@@ -16,7 +16,7 @@ export default function Home() {
         <Layout>
           <Hero img={"secMemHero"} title={"Membership"} />
           <Route />
-          <Interestedfn pic={"twoWomen"} />
+          <Interestedfn />
         </Layout>
       </main>
     </>
