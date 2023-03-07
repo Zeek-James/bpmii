@@ -1,16 +1,19 @@
 import { categories } from "@/constants/membership";
 import Image from "next/image";
 import React from "react";
-import Links from "../Links";
-import PLink from "../PLink";
+import { PLink, Links } from "..";
 import styles from "../style";
 
 const Route = () => {
   return (
     <section className="">
-      <div className="flex justify-center mb-4 md:mb-12">
-        <h5 className="text-gray mr-3 text-[17px]">HOME</h5>/{" "}
-        <h5 className="text-paleBlue ml-3 text-[17px] border-b">Membership</h5>
+      <div className="flex justify-center items-center mb-4 md:mb-12">
+        <PLink
+          styles="text-gray mr-3 text-[17px] cursor-pointer"
+          href="/"
+          text="Home"
+        />
+        /<h5 className="text-paleBlue ml-3 text-[17px] border-b">Membership</h5>
       </div>
       <div className="flex flex-col xl:flex-row sm:px-10 px-4  sm:pb-20 pb-4">
         <div className="flex flex-col justify-between my-6 xl:my-20">
@@ -46,7 +49,7 @@ const Route = () => {
                 become members of the institute.
               </p>
             </div>
-            <div className="relative flex sm:min-w-[350px]  justify-center mt-10">
+            <div className="relative flex mt-20 xl:mt-0  xl:min-w-[400px]">
               <Image
                 src={"/class.jpg"}
                 alt=""
@@ -59,11 +62,11 @@ const Route = () => {
                 alt=""
                 width={250}
                 height={370}
-                className="top-3 right-3 relative rounded-xl"
+                className="top-3 right-3 relative rounded-xl hidden sm:block"
               />
             </div>
           </div>
-          <div className="overflow-x  w-[330px] sm:w-full px-6 overflow-x-scroll">
+          <div className="overflow-x  md:min-w-[330px] w-[330px] sm:w-full md:px-6 overflow-x-scroll">
             <table
               className={`${styles.paddingY} overflow-x-scroll  table-auto  border-separate  w-full my-4`}
             >

@@ -14,7 +14,7 @@ export default function News() {
       </Head>
       <main className={""}>
         <Layout>
-          <Hero img={"shelf"} title={"Publications"} />
+          <Hero img={"shelf"} title={"News"} />
           <Info />
           <Interestedfn />
         </Layout>

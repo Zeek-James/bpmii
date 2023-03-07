@@ -1,16 +1,19 @@
 import { criterias } from "@/constants/membership";
 import Image from "next/image";
 import React from "react";
-import Links from "../Links";
-import PLink from "../PLink";
+import { PLink, Links } from "..";
 import styles from "../style";
 
 const Route = () => {
   return (
     <section className="">
-      <div className="flex justify-center mb-4 md:mb-12">
-        <h5 className="text-gray mr-3 text-[17px]">HOME</h5>/{" "}
-        <h5 className="text-paleBlue ml-3 text-[17px] border-b">Membership</h5>
+      <div className="flex justify-center items-center mb-4 md:mb-12">
+        <PLink
+          styles="text-gray mr-3 text-[17px] cursor-pointer"
+          href="/"
+          text="Home"
+        />
+        /<h5 className="text-paleBlue ml-3 text-[17px] border-b">Membership</h5>
       </div>
       <div className="flex flex-col md:flex-row sm:px-10 px-4  sm:pb-20 pb-4">
         <div className="flex flex-col justify-between my-6 md:my-20">
@@ -19,8 +22,8 @@ const Route = () => {
           </ul>
         </div>
         <div className={`${styles.paddingX}`}>
-          <div className="my-3 md:my-10 flex">
-            <div className="max-w-[700px]">
+          <div className={`my-3 md:my-10 flex flex-col xl:flex-row `}>
+            <div className="max-w-[2500px] mb-3">
               <Image
                 src={"/star.jpg"}
                 alt=""
@@ -41,17 +44,17 @@ const Route = () => {
                 equivalent to their placement.
               </p>
             </div>
-            <div className="relative flex">
+            <div className="relative flex w-full">
               <Image
                 src={"/woman.jpg"}
                 alt=""
                 width={460}
                 height={330}
-                className="bottom-3 left-3 relative z-10 rounded-xl"
+                className="xl:bottom-3 xl:left-3 relative z-10 rounded-xl"
               />
             </div>
           </div>
-          <div className="">
+          <div className="overflow-x  md:min-w-[330px] w-[330px] sm:w-full md:px-6 overflow-x-scroll">
             <table
               className={`${styles.paddingY}  table-auto  border-separate  w-full my-4`}
             >
@@ -63,7 +66,9 @@ const Route = () => {
                   <th className={`${col}   justify-center text-center`}>
                     Criteria
                   </th>
-                  <th className={`${col}   justify-center text-center`}>
+                  <th
+                    className={`${col}   justify-center text-center whitespace-nowrap`}
+                  >
                     Who is it For?
                   </th>
                 </tr>

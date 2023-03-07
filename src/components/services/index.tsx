@@ -5,9 +5,13 @@ import Image from "next/image";
 const Events = () => {
   return (
     <section className="">
-      <div className="flex justify-center mb-4 md:mb-12">
-        <h5 className="text-gray mr-3 text-[17px]">HOME</h5>/{" "}
-        <h5 className="text-paleBlue ml-3 text-[17px] border-b">Service</h5>
+      <div className="flex justify-center items-center mb-4 md:mb-12">
+        <PLink
+          styles="text-gray mr-3 text-[17px] cursor-pointer"
+          href="/"
+          text="Home"
+        />
+        /<h5 className="text-paleBlue ml-3 text-[17px] border-b">Service</h5>
       </div>
       <div className="flex flex-col lg:flex-row sm:px-10 px-4  sm:pb-20 pb-4">
         <div className="flex flex-col justify-between my-6 md:my-20">
@@ -69,7 +73,7 @@ const Events = () => {
                       Members NGN20,000 + VAT
                     </p>
                     <PLink
-                      href="event"
+                      href="services/event"
                       styles="bg-[#717861] border border-[#88CDD3] text-white mb-3"
                       text="Read more"
                     />

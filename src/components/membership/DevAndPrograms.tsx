@@ -1,16 +1,20 @@
 import { programs } from "@/constants/membership";
 import Image from "next/image";
 import React from "react";
-import Links from "../Links";
+import { PLink, Links } from "..";
 import styles from "../style";
 import Program from "./Program";
 
 const DevAndPrograms = () => {
   return (
     <section className="">
-      <div className="flex justify-center mb-4 md:mb-12">
-        <h5 className="text-gray mr-3 text-[17px]">HOME</h5>/{" "}
-        <h5 className="text-paleBlue ml-3 text-[17px] border-b">Membership</h5>
+      <div className="flex justify-center items-center mb-4 md:mb-12">
+        <PLink
+          styles="text-gray mr-3 text-[17px] cursor-pointer"
+          href="/"
+          text="Home"
+        />
+        /<h5 className="text-paleBlue ml-3 text-[17px] border-b">Membership</h5>
       </div>
       <div className="flex flex-col lg:flex-row sm:px-10 px-4  sm:pb-20 pb-4">
         <div className="flex flex-col justify-between">
@@ -52,14 +56,14 @@ const DevAndPrograms = () => {
                 alt=""
                 width={250}
                 height={370}
-                className="bottom-3 left-3 relative z-10"
+                className="bottom-3 left-3 relative z-10 rounded-xl"
               />
               <Image
                 src={"/penDown.jpg"}
                 alt=""
                 width={250}
                 height={370}
-                className="top-3 right-3 hidden sm:block relative"
+                className="top-3 right-3 relative rounded-xl hidden sm:block"
               />
             </div>
           </div>
@@ -96,7 +100,13 @@ const DevAndPrograms = () => {
             {programs[0].title}
           </h4>
           <p className="text-gray text-[21px]">{programs[0].content}</p>
+          <PLink
+            styles="text-primary text-[21px] mt-6 border"
+            href="membership/categories"
+            text="Continue"
+          />
         </div>
+
         <div className="mt-12 md:mt-0">
           <Image
             src={"/people.jpg"}
@@ -109,6 +119,11 @@ const DevAndPrograms = () => {
             {programs[1].title}
           </h4>
           <p className="text-gray text-[21px]">{programs[1].content}</p>
+          <PLink
+            styles="text-primary text-[21px] mt-4 border"
+            href="membership/criteria"
+            text="Continue"
+          />
         </div>
       </div>
     </section>

@@ -30,13 +30,13 @@ export const programs = [
     id: 1,
     title: "GRADING  MEMBERSHIP EXAMINATION ROUTE",
     content:
-      "The Graded membership programme is designed for first degree graduates of relevant disciplines and existing practitioners in the field of business process management. The first degree holders shall commence their BPM professional career by taking the various examinations required of them to become members of the institute.... Continue",
+      "The Graded membership programme is designed for first degree graduates of relevant disciplines and existing practitioners in the field of business process management. The first degree holders shall commence their BPM professional career by taking the various examinations required of them to become members of the institute....",
   },
   {
     id: 2,
     title: "GRADED MEMBERSHIP PROGRAMME (EXECUTIVE FAST TRACK)",
     content:
-      "Experienced practitioners in the field of process management shall have to take the executive fast track route to becoming members of the institutes. The years of practice and educational qualifications from relevant fields of studies shall be considered and they shall be offered the membership grades equivalent to their placement....Continue",
+      "Experienced practitioners in the field of process management shall have to take the executive fast track route to becoming members of the institutes. The years of practice and educational qualifications from relevant fields of studies shall be considered and they shall be offered the membership grades equivalent to their placement...",
   },
 ];
 

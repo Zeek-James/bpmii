@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import { PLink, Search, Topic } from ".";
 
@@ -21,14 +22,29 @@ const About = ({ max }: AboutProps) => {
         <div className="grid xl:grid-cols-4 gap-4 md:gap-24 sm:grid-cols-2">
           {arr.map((item, idx) => (
             <div className="p-3 sm:p-0 max-w-[270px]" key={idx}>
-              <Image
-                width={270}
-                height={350}
-                src={`/chart.jpg`}
-                alt="category"
-                key={item}
-                className="cursor-pointer mb-2 z-20 relative"
-              />
+              {max && (
+                <Link href={"insights/blog"}>
+                  <Image
+                    width={270}
+                    height={350}
+                    src={`/chart.jpg`}
+                    alt="category"
+                    key={item}
+                    className="cursor-pointer mb-2 z-20 relative"
+                  />
+                </Link>
+              )}
+              {!max && (
+                <Image
+                  width={270}
+                  height={350}
+                  src={`/chart.jpg`}
+                  alt="category"
+                  key={item}
+                  className="cursor-pointer mb-2 z-20 relative"
+                />
+              )}
+
               <p className="z-20 relative">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
                 vulputate libero
@@ -41,8 +57,8 @@ const About = ({ max }: AboutProps) => {
         {!max && (
           <PLink
             text="See more"
-            styles="bg-primary rounded-none text-white p-4 "
-            href="publications"
+            styles="bg-primary text-white p-4 "
+            href="insights"
           />
         )}
       </div>

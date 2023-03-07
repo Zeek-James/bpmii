@@ -24,18 +24,18 @@ const Navbar = () => {
           {/* <LogoIcon /> */}
           <Image src={"/logo.jpg"} alt="" height={60} width={60} />
         </Link>
-        <ul className="list-none lg:flex hidden  items-center flex-1">
+        <ul className="list-none xl:flex hidden  items-center flex-1">
           {navLinks.map((nav, index) => (
             <li
               key={nav.id}
               className={`font-poppins font-normal cursor-pointer text-[16px] p-2 rounded-md text-link whitespace-nowrap ${
-                route === nav.id ? "border border-link" : "text-link"
+                route === nav.id ? "underline-offset-8 underline " : "text-link"
               }  
           ${index === navLinks.length - 1 ? "mr-0" : "mr-2 lg:mr-5"}
           `}
             >
               <a
-                href={`${nav.id}`}
+                href={`/${nav.id}`}
                 className={
                   nav.title === "Sign in"
                     ? "pl-6 border-l-[3px] border-primary"
@@ -50,9 +50,9 @@ const Navbar = () => {
         <PLink
           href="become-a-member"
           text="Become A Member"
-          styles="border border-secondary text-secondary lg:flex hidden  ml-2 "
+          styles="border border-secondary text-secondary xl:flex hidden  ml-20 "
         />
-        <div className="lg:hidden flex flex-1 justify-end items-center">
+        <div className="xl:hidden flex flex-1 justify-end items-center">
           {toggle ? (
             <AiOutlineClose
               className="mx-2 text-primary block text:3xl cursor-pointer"
@@ -67,7 +67,7 @@ const Navbar = () => {
 
           <div
             className={`${!toggle ? "hidden" : ""}
-          p-6 bg-white shadow-lg absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar
+          p-6 bg-[#eeeaea] shadow-lg absolute top-20 right-0 mx-4 my-2 min-w-[140px]  rounded-xl sidebar
           `}
           >
             <ul className="list-none flex justify-end items-start flex-1 flex-col">
@@ -77,10 +77,14 @@ const Navbar = () => {
                   className={`
               font-poppins font-medium cursor-pointer text-[16px] 
               p-2 rounded-md 
-              ${route === nav.id ? "border border-link" : "text-link"}  
+              ${
+                route === nav.id
+                  ? "underline-offset-8 underline text-link"
+                  : "text-link"
+              }  
               mb-4`}
                 >
-                  <a href={`${nav.id}`}>{nav.title}</a>
+                  <a href={`/${nav.id}`}>{nav.title}</a>
                 </li>
               ))}
             </ul>

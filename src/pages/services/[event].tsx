@@ -14,7 +14,7 @@ export default function Events() {
       </Head>
       <main className={""}>
         <Layout>
-          <Hero img={"womenwriting"} title={"Services"} />
+          <Hero img={"womenwriting"} title={"Event"} />
           <Event />
           <Interestedfn />
         </Layout>

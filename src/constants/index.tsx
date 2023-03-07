@@ -12,8 +12,17 @@ export const navLinks = [
     title: "Membership",
   },
   {
-    id: "publications",
-    title: "Publications",
+    id: "insights",
+    title: "Insights",
+  },
+  {
+    id: "gallery",
+    title: "Gallery",
+  },
+
+  {
+    id: "advocacy",
+    title: "Advocacy",
   },
   {
     id: "sign-in",
@@ -44,6 +53,32 @@ export const footer = {
       title: "Affiliate/Chapter Leader Login",
     },
   ],
+  linksfn: [
+    {
+      id: "/",
+      title: "Contact Us",
+    },
+    {
+      id: "/",
+      title: "Privacy Policy",
+    },
+    {
+      id: "/",
+      title: "Accessibility Policy",
+    },
+    {
+      id: "/",
+      title: "BPMI Consult",
+    },
+    {
+      id: "login",
+      title: "Affiliate/Chapter Leader Login",
+    },
+    {
+      id: "job-placement-form",
+      title: "Fill Job Placement Form",
+    },
+  ],
   copyRight: "Copyright © 2023 BPMI. All rights reserved.",
 };
 
@@ -54,7 +89,7 @@ export const links = [
   },
 
   {
-    id: "publications",
+    id: "insights",
     title: "Publications",
   },
   {

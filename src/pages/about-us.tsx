@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { Hero, Layout, Links, styles } from "@/components";
+import { Hero, Layout, Links, PLink, styles } from "@/components";
 import { Interested } from "@/components/landing-page";
 import { cards, ourObjs } from "@/constants/about";
 import { AiFillLike } from "react-icons/ai";
@@ -17,8 +17,13 @@ export default function Home() {
         <Layout>
           <Hero img={"aboutHero"} title={"About BPMI"}></Hero>
           <section className="">
-            <div className="flex justify-center mb-4 md:mb-12">
-              <h5 className="text-gray mr-3 text-[17px]">Home</h5>/{" "}
+            <div className="flex justify-center items-center mb-4 md:mb-12">
+              <PLink
+                styles="text-gray mr-3 text-[17px] cursor-pointer"
+                href="/"
+                text="Home"
+              />
+              /
               <h5 className="text-paleBlue border-b ml-3 text-[17px]">
                 ABOUT US
               </h5>
