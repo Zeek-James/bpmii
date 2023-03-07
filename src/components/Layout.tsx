@@ -27,4 +27,14 @@ export const LayoutFn = ({ children }: LayoutProp) => {
   );
 };
 
+export const DashboardLayout = ({ children }: LayoutProp) => {
+  return (
+    <div>
+      {/* <Navbar /> */}
+      <div className="sm:pt-26 pt-24 bg-[#FFF]">{children}</div>
+      {/* <Footer /> */}
+    </div>
+  );
+};
+
 export default Layout;

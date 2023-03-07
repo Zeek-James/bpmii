@@ -1,6 +1,7 @@
 import Footer from "./Footer";
 import Hero from "./Hero";
 import { Herofn } from "./Hero";
+import { DashboardLayout } from "./Layout";
 import Layout from "./Layout";
 import Navbar from "./Navbar";
 
@@ -19,6 +20,7 @@ export {
   Herofn,
   Layout,
   Navbar,
+  DashboardLayout,
   styles,
   Button,
   PLink,
