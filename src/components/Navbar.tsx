@@ -4,8 +4,9 @@ import React, { useState } from "react";
 import { navLinks } from "@/constants";
 import PLink from "./PLink";
 import styles from "./style";
-import LogoIcon from "./Logo";
+// import LogoIcon from "./Logo";
 import Link from "next/link";
+import { Menu } from "@headlessui/react";
 import Image from "next/image";
 
 const Navbar = () => {
@@ -25,28 +26,64 @@ const Navbar = () => {
           <Image src={"/logo.jpg"} alt="" height={60} width={60} />
         </Link>
         <ul className="list-none xl:flex hidden  items-center flex-1">
-          {navLinks.map((nav, index) => (
-            <li
-              key={nav.id}
-              className={`font-poppins font-normal cursor-pointer text-[16px] p-2 rounded-md text-link whitespace-nowrap ${
-                route === nav.id ? "underline-offset-8 underline " : "text-link"
-              }  
+          {navLinks.map((nav, index) => {
+            if (!nav.list) {
+              return (
+                <li
+                  key={nav.id}
+                  className={`font-poppins font-normal cursor-pointer text-[16px] p-2 rounded-md text-link whitespace-nowrap ${
+                    route === nav.id
+                      ? "underline-offset-8 underline "
+                      : "text-link"
+                  }  
           ${index === navLinks.length - 1 ? "mr-0" : "mr-2 lg:mr-5"}
           `}
-            >
-              <a
-                href={`/${nav.id}`}
-                className={
-                  nav.title === "Sign in"
-                    ? "pl-6 border-l-[3px] border-primary"
-                    : ""
-                }
-              >
-                {nav.title}
-              </a>
-            </li>
-          ))}
+                >
+                  <Link
+                    href={`/${nav.id}`}
+                    className={
+                      nav.title === "Sign in"
+                        ? "pl-6 border-l-[3px] border-primary"
+                        : ""
+                    }
+                  >
+                    {nav.title}
+                  </Link>
+                </li>
+              );
+            }
+            if (nav.list) {
+              return (
+                <Menu as="div" className="relative inline-block" key={nav.id}>
+                  <Menu.Button
+                    className={
+                      "text-primary whitespace-nowrap mr-6 outline-none"
+                    }
+                  >
+                    {nav.title}
+                  </Menu.Button>
+                  <Menu.Items
+                    className={
+                      "absolute right-0 w-fit origin-top-right  bg-white border border-darkGray rounded-lg py-2  outline-none shadow-inner"
+                    }
+                  >
+                    {nav.list.map((item) => (
+                      <Menu.Item key={item.id}>
+                        <Link
+                          className="dropdown-link text-primary block  whitespace-nowrap "
+                          href={`/${item.id}`}
+                        >
+                          {item.title}
+                        </Link>
+                      </Menu.Item>
+                    ))}
+                  </Menu.Items>
+                </Menu>
+              );
+            }
+          })}
         </ul>
+
         <PLink
           href="become-a-member"
           text="Become A Member"

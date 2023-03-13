@@ -10,6 +10,17 @@ export const navLinks = [
   {
     id: "membership",
     title: "Membership",
+    list: [
+      { id: "membership-benefits", title: "Membership Benefits" },
+      {
+        title: "Grading examination route",
+        id: "membership-benefits/grading-examination-route",
+      },
+      {
+        title: "Graded Membership Program",
+        id: "membership-benefits/graded-membership-program",
+      },
+    ],
   },
   {
     id: "insights",
