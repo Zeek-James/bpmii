@@ -8,9 +8,15 @@ import styles from "./style";
 import Link from "next/link";
 import { Menu } from "@headlessui/react";
 import Image from "next/image";
+import ExpandedIcon from "./ExpandedIcon";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
+  const [isExpanded, toggleExpanded] = React.useState(false);
+
+  const onClick = () => {
+    toggleExpanded((prev) => !prev);
+  };
 
   const router = useRouter();
 
@@ -57,11 +63,16 @@ const Navbar = () => {
                 <Menu as="div" className="relative inline-block" key={nav.id}>
                   <Menu.Button
                     className={
-                      "text-primary whitespace-nowrap mr-6 outline-none"
+                      "text-primary whitespace-nowrap mr-6 outline-none flex items-center gap-3"
                     }
                   >
                     {nav.title}
+                    <ExpandedIcon
+                      isExpanded={isExpanded}
+                      handleClick={onClick}
+                    />
                   </Menu.Button>
+
                   <Menu.Items
                     className={
                       "absolute right-0 w-fit origin-top-right  bg-white border border-darkGray rounded-lg py-2  outline-none shadow-inner"
