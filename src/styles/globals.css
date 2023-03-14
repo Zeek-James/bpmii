@@ -69,3 +69,7 @@ a {
 .dropdown-link {
   @apply flex p-2 hover:bg-blue-200;
 }
+
+.sort {
+  @apply py-2 px-1 text-sm focus:ring-0 outline-none border border-dim rounded-md text-black;
+}

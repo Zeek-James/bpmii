@@ -83,9 +83,8 @@ const Navbar = () => {
             }
           })}
         </ul>
-
         <PLink
-          href="become-a-member"
+          href="membership-benefits"
           text="Become A Member"
           styles="border border-secondary text-secondary xl:flex hidden  ml-20 "
         />
@@ -127,7 +126,7 @@ const Navbar = () => {
             </ul>
             <div className="flex lg:hidden">
               <PLink
-                href="become-a-member"
+                href="membership-benefits"
                 text="Become A Member"
                 styles="border border-secondary  text-secondary flex lg:hidden"
               />
