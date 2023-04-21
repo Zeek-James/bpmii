@@ -85,16 +85,16 @@ const Route = () => {
                 {categories.map((q) => (
                   <tr key={q.id}>
                     <td className={`${col}  text-center `}>
-                      <p className="text-[28px] ">{q.id}</p>
+                      <p className="text-[28px] text-black ">{q.id}</p>
                     </td>
                     <td className={`${col} `}>
                       <div className="">
-                        <p className="max-w-[200px] text-black font-normal text-[18px]">
+                        <p className="max-w-[200px] text-black font-normal text-[18px] mb-4">
                           {q.category}
                         </p>
                         <PLink
                           href={q.link}
-                          styles="text-white text-[18px] mt-4 bg-primary rounded-none"
+                          styles="text-white text-[18px] bg-primary rounded-none"
                           text="Apply"
                         />
                       </div>
