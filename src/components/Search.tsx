@@ -9,7 +9,10 @@ const Search = () => {
       </h4>
       <div className="flex flex-col sm:flex-row">
         <div className=" sm:w-[350px] border-b border-[#DBDBDB] bg-white  h-max p-2 mb-4 flex items-center mr-8">
-          <input placeholder="Search" className="text-[20px] text-dim" />
+          <input
+            placeholder="Search"
+            className="text-[20px] text-dim bg-white"
+          />
         </div>
         <Button
           text="Submit"
