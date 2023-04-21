@@ -10,7 +10,9 @@ const MemBenefits = () => {
         <h3 className={`  text-primary ${styles.heading3} mb-5`}>
           MEMBERSHIP BENEFITS
         </h3>
-        <p className={`font-normal  text-black ${styles.paragraph} max-w-5xl `}>
+        <p
+          className={`font-normal  text-black ${styles.paragraph} max-w-5xl mb-8`}
+        >
           As a member of the Business Process Management Institute, you are
           positioned to develop and improve on your business process management
           knowledge, skills, and network by joining the Business Process
@@ -19,7 +21,7 @@ const MemBenefits = () => {
         <PLink
           text="Learn More"
           href="membership"
-          styles="bg-primary text-white mt-8 p-4"
+          styles="bg-primary text-white  p-4"
         />
       </div>
       <div className="relative flex mt-20 xl:mt-0  xl:min-w-[400px]">

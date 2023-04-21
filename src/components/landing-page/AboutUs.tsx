@@ -28,7 +28,9 @@ const AboutUs = () => {
         <h3 className={`  text-primary ${styles.heading3} mb-5`}>
           ABOUT BUSINESS PROCESS MANAGEMENT INSTITUTE
         </h3>
-        <p className={`font-normal  text-black ${styles.paragraph} max-w-5xl `}>
+        <p
+          className={`font-normal  text-black ${styles.paragraph} max-w-5xl mb-8 `}
+        >
           The Business Process Management Institute is established to develop
           and promote the practice of business process management in Nigeria.
           This is based on the desire to ensure that the highest quality valued
@@ -37,7 +39,7 @@ const AboutUs = () => {
         <PLink
           text="Learn More"
           href="about-us"
-          styles="bg-primary text-white mt-8 p-4"
+          styles="bg-primary text-white p-4"
         />
       </div>
     </div>
