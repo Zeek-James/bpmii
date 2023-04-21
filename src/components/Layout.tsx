@@ -10,7 +10,7 @@ interface LayoutProp {
 
 const Layout = ({ children }: LayoutProp) => {
   return (
-    <div>
+    <div className="bg-[#FFF]">
       <Navbar />
       <div className="sm:pt-26 pt-24 bg-[#FFF]">{children}</div>
       {/* <div className="sm:pt-26 pt-24 bg-[#F5F5F5]">{children}</div> */}
@@ -21,7 +21,7 @@ const Layout = ({ children }: LayoutProp) => {
 
 export const LayoutFn = ({ children }: LayoutProp) => {
   return (
-    <div>
+    <div className="bg-[#FFF]">
       <Navbar />
       <div className="sm:pt-26 pt-24 bg-[#FFF]">{children}</div>
       <Footer />
@@ -31,7 +31,7 @@ export const LayoutFn = ({ children }: LayoutProp) => {
 
 export const DashboardLayout = ({ children }: LayoutProp) => {
   return (
-    <div className="flex h-screen ">
+    <div className="flex h-screen bg-[#fff] ">
       <SideBar />
       <div className="sm:pt-6 pt-12 sm:px-6 px-2 w-full bg-[#FFF]">
         <Image
