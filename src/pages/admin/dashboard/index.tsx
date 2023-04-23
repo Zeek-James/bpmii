@@ -35,14 +35,14 @@ export default function Home({}) {
               <form className="   ml-auto mb-3">
                 <input
                   type="search"
-                  className="sort"
+                  className="sort  bg-white"
                   placeholder="Search here..."
                   onChange={handleSearch}
                 />
               </form>
               <div className="">
-                <input type="date" className="sort mr-3" />
-                <input type="date" className="sort" />
+                <input type="date" className="sort mr-3 bg-white " />
+                <input type="date" className="sort  bg-white" />
               </div>
             </div>
           </div>
@@ -61,8 +61,8 @@ export default function Home({}) {
               <tbody className="border-b  border-[#E6E6E6]">
                 {[1, 2, 3, 4, 5, 6, 7].map((item) => (
                   <tr key={item}>
-                    <td className="p-5 text-left">
-                      <input type={"checkbox"} />
+                    <td className="p-5 text-left bg-white">
+                      <input type={"checkbox"} className=" bg-white" />
                     </td>
                     <td className="p-5 text-left">Top 10 tip web design</td>
                     <td className="p-5 text-right">June 12, 2022</td>

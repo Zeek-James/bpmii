@@ -2,10 +2,16 @@ import Image from "next/image";
 import React from "react";
 import PLink from "../PLink";
 import styles from "../style";
+import { motion } from "framer-motion";
 
 const MemBenefits = () => {
   return (
-    <div className={`my-3 md:my-10 flex flex-col xl:flex-row items-center `}>
+    <motion.div
+      initial={{ y: 50, opacity: 0 }}
+      whileInView={{ y: 0, opacity: 1 }}
+      transition={{ duration: 1.5, type: "spring" }}
+      className={`my-3 md:my-10 flex flex-col xl:flex-row items-center `}
+    >
       <div className="">
         <h3 className={`  text-primary ${styles.heading3} mb-5`}>
           MEMBERSHIP BENEFITS
@@ -40,7 +46,7 @@ const MemBenefits = () => {
           className="top-3 right-3 hidden sm:block relative"
         />
       </div>
-    </div>
+    </motion.div>
   );
 };
 

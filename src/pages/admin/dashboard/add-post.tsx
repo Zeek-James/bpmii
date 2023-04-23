@@ -68,7 +68,7 @@ export default function Home() {
                   <div className="flex flex-wrap -mx-3 mb-6">
                     <div className="w-full md:w-1/3 px-3 mb-6 md:mb-0">
                       <input
-                        className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 
+                        className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4
                 mb-3
                 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                         id="grid-city"
@@ -79,9 +79,9 @@ export default function Home() {
                     <div className="w-full md:w-1/3 px-3 mb-6 md:mb-0">
                       <div className="relative">
                         <select
-                          className="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded  
+                          className="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded
                 mb-3
-                  
+
                   leading-tight focus:outline-none focus:bg-white focus:border-gray-500 text-gray"
                           id="grid-state"
                         >
@@ -102,9 +102,9 @@ export default function Home() {
                     </div>
                     <div className="w-full md:w-1/3 px-3 mb-6 md:mb-0">
                       <input
-                        className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 
+                        className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4
                 mb-3
-                
+
                 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                         // id="grid-zip"
                         type="text"

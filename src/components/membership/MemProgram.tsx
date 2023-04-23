@@ -63,7 +63,7 @@ const Route = () => {
                   <th className={`${col}   justify-center text-center`}>
                     Level
                   </th>
-                  <th className={`${col}   justify-center text-center`}>
+                  <th className={`${col}   justify-center text-start`}>
                     Criteria
                   </th>
                   <th
@@ -77,7 +77,7 @@ const Route = () => {
                 {criterias.map((q) => (
                   <tr key={q.id}>
                     <td className={`${col}  text-center `}>
-                      <p className="text-[28px] ">
+                      <p className="text-[28px] text-black ">
                         {q.level[0]}
                         <br />
                         {q.level[1]}
@@ -85,7 +85,7 @@ const Route = () => {
                     </td>
                     <td className={`${col} `}>
                       <div className="">
-                        <p className=" text-black font-normal text-[18px]">
+                        <p className=" text-black font-normal text-[18px] mb-4">
                           {q.criteria}
                         </p>
                         <PLink

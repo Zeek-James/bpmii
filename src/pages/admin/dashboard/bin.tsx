@@ -27,7 +27,7 @@ export default function Home({}) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={""}>
+      <main className={"bg-white h-full"}>
         <Layout>
           <div className="flex justify-between  items-end mb-4 md:mb-12">
             <h2 className="text-3xl">Deleted Posts</h2>
@@ -35,14 +35,14 @@ export default function Home({}) {
               <form className="   ml-auto mb-3">
                 <input
                   type="search"
-                  className="sort"
+                  className="sort bg-white"
                   placeholder="Search here..."
                   onChange={handleSearch}
                 />
               </form>
               <div className="">
-                <input type="date" className="sort mr-3" />
-                <input type="date" className="sort" />
+                <input type="date" className="sort mr-3 bg-white " />
+                <input type="date" className="sort  bg-white" />
               </div>
             </div>
           </div>

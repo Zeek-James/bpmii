@@ -2,10 +2,14 @@ import Image from "next/image";
 import React from "react";
 import PLink from "../PLink";
 import styles from "../style";
+import { motion } from "framer-motion";
 
 const AboutUs = () => {
   return (
-    <div
+    <motion.div
+      initial={{ y: 50, opacity: 0 }}
+      whileInView={{ y: 0, opacity: 1 }}
+      transition={{ duration: 1.5, type: "spring" }}
       className={`my-3 md:my-10 flex flex-col-reverse xl:flex-row items-center `}
     >
       <div className="relative flex mt-20 xl:mt-0  xl:min-w-[400px]">
@@ -42,7 +46,7 @@ const AboutUs = () => {
           styles="bg-primary text-white p-4"
         />
       </div>
-    </div>
+    </motion.div>
   );
 };
 

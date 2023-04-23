@@ -99,9 +99,9 @@ const DevAndPrograms = () => {
           <h4 className={"text-primary font-bold text-[21px] my-5"}>
             {programs[0].title}
           </h4>
-          <p className="text-gray text-[21px]">{programs[0].content}</p>
+          <p className="text-gray text-[21px]  mb-6">{programs[0].content}</p>
           <PLink
-            styles="text-primary text-[21px] mt-6 border"
+            styles="text-primary text-[21px] border"
             href="membership/categories"
             text="Continue"
           />
@@ -118,7 +118,7 @@ const DevAndPrograms = () => {
           <h4 className={"text-primary font-bold text-[21px] my-5"}>
             {programs[1].title}
           </h4>
-          <p className="text-gray text-[21px]">{programs[1].content}</p>
+          <p className="text-gray text-[21px]  mb-6">{programs[1].content}</p>
           <PLink
             styles="text-primary text-[21px] mt-4 border"
             href="membership/criteria"

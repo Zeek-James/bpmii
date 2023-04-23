@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import PLink from "../PLink";
 import styles from "../style";
+import { motion } from "framer-motion";
 
 const Advocate = () => {
   return (
@@ -33,7 +34,12 @@ const Advocate = () => {
 
 const Advocacy = () => {
   return (
-    <div className="flex flex-col justify-center  w-full">
+    <motion.div
+      initial={{ y: 50, opacity: 0 }}
+      whileInView={{ y: 0, opacity: 1 }}
+      transition={{ duration: 1.5, type: "spring" }}
+      className="flex flex-col justify-center  w-full"
+    >
       <h3 className={` text-center text-primary ${styles.heading3} mb-10`}>
         ADVOCACY
       </h3>
@@ -48,7 +54,7 @@ const Advocacy = () => {
           styles="bg-primary text-white mt-8 p-4 "
         />
       </div>
-    </div>
+    </motion.div>
   );
 };
 

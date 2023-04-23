@@ -73,7 +73,7 @@ const Route = () => {
               <thead>
                 <tr className={` text-paleBlue ${styles.heading3}`}>
                   <th className={`${col}   justify-center text-center`}>S/N</th>
-                  <th className={`${col}   justify-center text-center`}>
+                  <th className={`${col}   justify-center text-start`}>
                     CATEGORY
                   </th>
                   <th className={`${col}   justify-center text-center`}>
@@ -81,31 +81,49 @@ const Route = () => {
                   </th>
                 </tr>
               </thead>
-              <tbody>
-                {categories.map((q) => (
-                  <tr key={q.id}>
-                    <td className={`${col}  text-center `}>
-                      <p className="text-[28px] text-black ">{q.id}</p>
-                    </td>
-                    <td className={`${col} `}>
-                      <div className="">
-                        <p className="max-w-[200px] text-black font-normal text-[18px] mb-4">
-                          {q.category}
-                        </p>
-                        <PLink
-                          href={q.link}
-                          styles="text-white text-[18px] bg-primary rounded-none"
-                          text="Apply"
-                        />
-                      </div>
-                    </td>
-                    <td className={`${col}  `}>
-                      <p className=" text-black font-normal text-[18px]">
-                        {q.description}
-                      </p>
-                    </td>
-                  </tr>
-                ))}
+              <tbody className="border-collapse border border-red-700">
+                {categories.map((q) => {
+                  return (
+                    <tr key={q.id}>
+                      <td
+                        className={`border border-slate-300  ${col}  text-center `}
+                      >
+                        <p className="text-[28px] text-black ">{q.id}</p>
+                      </td>
+                      <td className={`border border-slate-300  ${col} `}>
+                        <div className="">
+                          <p className="max-w-[200px] text-black font-normal text-[18px] mb-4">
+                            {q.category}
+                          </p>
+                          <PLink
+                            href={q.link}
+                            styles="text-white text-[18px] bg-primary rounded-none"
+                            text="Apply"
+                          />
+                        </div>
+                      </td>
+                      <td className={`border border-slate-300  ${col}  `}>
+                        {Array.isArray(q.description) ? (
+                          <ul>
+                            {q.description.map((item, index) => (
+                              <li
+                                key={index}
+                                className="text-black font-normal text-[18px] mb-3 flex"
+                              >
+                                <span className="block mr-3">{index + 1}</span>{" "}
+                                {item}
+                              </li>
+                            ))}
+                          </ul>
+                        ) : (
+                          <p className="text-black font-normal text-[18px]">
+                            {q.description}
+                          </p>
+                        )}
+                      </td>
+                    </tr>
+                  );
+                })}
               </tbody>
             </table>
           </div>

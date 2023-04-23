@@ -1,6 +1,8 @@
 import Image from "next/image";
 import React from "react";
 import PLink from "./PLink";
+import { AnimatedText } from "./AnimatedText";
+import { motion } from "framer-motion";
 
 interface HeroProp {
   img?: string;
@@ -29,9 +31,14 @@ const Hero = ({ img, title }: HeroProp) => {
       min-h-[490px] lg:h-[520px]
       text-white  flex flex-col items-center justify-center  z-20 px-4"
       >
-        <h1 className="lg:text-5xl text-3xl mb-4 md:mb-8 leading-[40px] sm:leading-[60px] text-center sm:text-start">
+        <motion.h1
+          initial={{ y: 50, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 1.5, type: "spring" }}
+          className="lg:text-5xl text-3xl mb-4 md:mb-8 leading-[40px] sm:leading-[60px] text-center sm:text-start"
+        >
           {title}
-        </h1>
+        </motion.h1>
         <PLink
           styles="bg-white text-primary rounded-lg px-5 mt-8"
           href="membership"
@@ -71,12 +78,16 @@ export const Herofn = ({ img, title }: HeroProp) => {
         className="
         pt-20
       min-h-[490px] lg:h-[520px]
-      text-white  flex  items-center  justify-end  z-20 px-4"
+      text-white  flex  items-center  justify-end  z-20 px-4 "
       >
-        <h1 className="lg:text-5xl text-3xl mb-2 leading-[40px] sm:leading-[60px] text-center sm:text-start ">
+        {/* <h1 className="lg:text-5xl text-3xl mb-2 leading-[40px] sm:leading-[60px] text-center sm:text-start ">
           Promoting the practice of Business <br /> Process Management in
           Nigeria
-        </h1>
+        </h1> */}
+        <AnimatedText
+          className="lg:text-5xl text-3xl mb-2 leading-[40px] sm:leading-[60px] text-center sm:text-start max-w-3xl "
+          text={title}
+        />
       </div>
     </div>
   );
