@@ -1,8 +1,6 @@
 import Head from "next/head";
-import { Interested } from "@/components/landing-page";
-
 import { LayoutFn } from "@/components/Layout";
-import { Hero, PLink, styles } from "@/components";
+import { Hero, styles } from "@/components";
 import Image from "next/image";
 
 export default function Gallery() {
@@ -19,14 +17,14 @@ export default function Gallery() {
           <Hero img={"reel"} title={"GALLERY"}></Hero>
           <div className={`mb-10 md:mb-20 ${styles.paddingX}`}>
             <div className="grid xl:grid-cols-4 lg:grid-cols-3 gap-4 sm:grid-cols-2">
-              {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((a) => (
+              {[1, 2, 3, 4, 5, 6, 7, 8].map((a, idx) => (
                 <Image
-                  src={"/advoc.jpg"}
+                  src={`/gal-${idx + 1}.jpg`}
                   alt={""}
-                  width={500}
+                  width={300}
                   height={370}
                   key={a}
-                  className="mb-10"
+                  className="mb-10 object-cover"
                 />
               ))}
             </div>
